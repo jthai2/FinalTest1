@@ -15,7 +15,7 @@ int main()
 
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	// you can loop k higher to see more color choices
-	for (k = 1; k < 1000; k++)
+	for (k = 1; k < 255; k++)
 	{
 		// pick the colorattribute k you want
 		SetConsoleTextAttribute(hConsole, k);

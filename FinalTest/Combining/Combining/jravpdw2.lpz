@@ -9,6 +9,8 @@ using namespace std;
 
 int main()
 {
+	wchar_t bullet = L'\x0298';
+
 	CONSOLE_FONT_INFOEX cfi;
 	cfi.cbSize = sizeof(cfi);
 	cfi.nFont = 0;
@@ -24,15 +26,10 @@ int main()
 
 	string choice;
 
-	char arrowRight = 16;
-	char arrowDown = 31;
-
 	//welcoming screen + instructions
 	cout << "\n\n\n\n\n\n\n\n\n                     Welcome to Kingdom Harbinger!\n\n\n" << endl;
 	Sleep(5000);
 top:
-	
-	cout << "\n" << arrowDown;
 	cout << "\nWhat would you like to do?" << endl;
 	Sleep(1000);
 	cout << "\n	1. [start]" << endl;
@@ -52,13 +49,12 @@ top:
 	}
 	else if (choice == "info")
 	{
-		Sleep(1350);
-		cout << "\n	" << arrowRight << "This is a text based story where you'll be traveling along as \n	 a Rogue." << endl;
+		cout << "\n	\u0298This is a text based story where you'll be traveling along as \n	 a Rogue." << endl;
+		Sleep(3000);
+		cout << "\n	\u2022Your objective is to complete multiple stages and tasks which \n	 will lead you to the end." << endl;
 		Sleep(3500);
-		cout << "\n	" << arrowRight << "Your objective is to complete multiple stages and tasks which \n	 will lead you to the end." << endl;
+		cout << "\n	\u2022You may survive and also die, different choices lead you into \n	 choosing if you're going to be a good, bad, or neutral character." << endl;
 		Sleep(4000);
-		cout << "\n	" << arrowRight << "You may survive and also die, different choices lead you into \n	 choosing if you're going to be a good, bad, or neutral character." << endl;
-		Sleep(5000);
 
 	startScreenChoice:
 		cout << "\nWould you like to go back to the start screen?" << endl;

@@ -23,5 +23,5 @@ int main()
 	}
 
 	cin.get(); // wait
-	return 0;
+	return 0; \*
 }

@@ -26,13 +26,14 @@ int main()
 
 	char arrowRight = 16;
 	char arrowDown = 31;
-
+	
 	//welcoming screen + instructions
 	cout << "\n\n\n\n\n\n\n\n\n                     Welcome to Kingdom Harbinger!\n\n\n" << endl;
-	Sleep(5000);
+	Sleep(6000);
 top:
 	
-	cout << "\n" << arrowDown;
+	system("cls");
+	cout << arrowDown;
 	cout << "\nWhat would you like to do?" << endl;
 	Sleep(1000);
 	cout << "\n	1. [start]" << endl;

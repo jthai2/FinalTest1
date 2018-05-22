@@ -26,33 +26,71 @@ int main()
 
 	char arrowRight = 16;
 	char arrowDown = 31;
+	int c;
 	
-	//welcoming screen + instructions
-	cout << "\n\n\n\n\n\n\n\n\n                     Welcome to Kingdom Harbinger!\n\n\n" << endl;
-	Sleep(6000);
 top:
-	
-	system("cls");
-	cout << arrowDown;
-	cout << "\nWhat would you like to do?" << endl;
+	//welcoming screen + instructions
+	cout << "\n\n\n                           Kingdom Harbinger!" << endl;
+	cout << "                   .-                                        _,-. " << endl;
+	cout << "	    ______/C_________________________________,.--v/^^ ,/       " << endl;
+	cout << "	 ,n#|##|#}{------------------------------ - - - ___-^          " << endl;
+	cout << "	,,,```````|/,-,,,^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^               " << endl;
+	cout << "                 c/,                                              " << endl;
+	Sleep(6000);
+	cout << "      	                      " << arrowRight << " [start]" << endl;
 	Sleep(1000);
-	cout << "\n	1. [start]" << endl;
+	cout << "\n	                      " << arrowRight << " [info]" << endl;
 	Sleep(1000);
-	cout << "\n	2. [info]" << endl;
-	Sleep(1000);
-	cout << "\n	3. [exit]" << endl;
+	cout << "\n	                      " << arrowRight << " [exit]" << endl;
 	Sleep(1000);
 
-	cout << "\nInput Answer: ";
+	cout << "\n\n\n\n\nInput Answer: ";
 	cin >> choice;
 
 	if (choice == "start")
 	{
-		system("color 0f");
-		cout << "You have entered the palace and the King approaches you...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" << endl;
+		system("cls");
+		cout << "The Kingdom of Makuria, like most Kingdoms, was quite peaceful. The ";
+		for (c = 8; c < 9; c++)
+		{
+			SetConsoleTextAttribute(hConsole, c);
+			cout << "King";
+		}
+		for (c = 7; c < 8; c++)
+		{
+			SetConsoleTextAttribute(hConsole, c);
+			cout << " \nwas in good political standings with surrounding villages, the Kingdom \nwas wealthy, crime was very minimal, and most importantly the people were \nhappy. " << endl;
+			system("pause");
+			cout << "\nThis peace lasted for centuries... But... like most stories of ";
+			for (c = 6; c < 7; c++)
+			{
+				SetConsoleTextAttribute(hConsole, c);
+				cout << "Heroism";
+			}
+			for (c = 7; c < 8; c++)
+			{
+				SetConsoleTextAttribute(hConsole, c);
+				cout << ", \nthis peace was inevitably disrupted. " << endl;
+			}
+			system("pause");
+
+			cout << "\nOne day ";
+			for (c = 4; c < 5; c++)
+			{
+				SetConsoleTextAttribute(hConsole, c);
+				cout << "Monsters";
+			}
+			for (c = 7; c < 8; c++)
+			{
+				SetConsoleTextAttribute(hConsole, c);
+				cout << " began to appear and started terrorizing the Kingdom. \nThe guard, through their centuries of peace, grew lazy and weak proving \nthat they were no match for these malevolent beasts. Many-a-folk died \nin the following years.";
+			}
+			//system("pause");
+		}
 	}
 	else if (choice == "info")
 	{
+		system("cls");
 		Sleep(1350);
 		cout << "\n	" << arrowRight << "This is a text based story where you'll be traveling along as \n	 a Rogue." << endl;
 		Sleep(3500);
@@ -95,10 +133,7 @@ top:
 	}
 	else
 	{
-		cout << "\nThat is not a valid choice... " << endl;
-		Sleep(500);
-		cout << "Please try again...\n" << endl;
-
+		system("cls");
 		goto top;
 	}
 

@@ -10,9 +10,9 @@ using namespace std;
 void SetTextXY(int x, int y, char *buf, int timestoBlink, int delayMilliSecs)
 {
 	::system("cls");
-	//COORD ord;
-//	ord.X = x;
-	//ord.Y = y;
+	COORD ord;
+	ord.X = x;
+	ord.Y = y;
 
 	int len = strlen(buf);
 	char *p = new char[len + 1];

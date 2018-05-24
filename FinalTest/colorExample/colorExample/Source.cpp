@@ -15,7 +15,9 @@ int main()
 
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	// you can loop k higher to see more color choices
-	for (k = 4; k < 5; k++)
+
+	cout << "This is a ";
+	for (k = 0; k < 255; k++)
 	{
 		// pick the colorattribute k you want
 		SetConsoleTextAttribute(hConsole, k);

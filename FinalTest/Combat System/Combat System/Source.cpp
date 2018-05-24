@@ -75,9 +75,8 @@ int main()
 				{
 					d4 = rand() % 4 + 1;
 					threeD4 = d4 + threeD4;
-					cout << "\nYou Hit for " << threeD4 << " damage!" << endl;
 				}
-					//cout << "\nYou Hit for " << threeD4 << " damage!" << endl;
+					cout << "\nYou Hit for " << threeD4 << " damage!" << endl;
 			}
 			cin >> end;
 		} while (end != 1);

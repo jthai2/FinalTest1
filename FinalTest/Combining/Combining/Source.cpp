@@ -50,6 +50,7 @@ top:
 	if (choice == "start")
 	{
 		system("cls");
+		Sleep(1000);
 		cout << "The Kingdom of Makuria, like most Kingdoms, was quite peaceful. The King \nwas in good political standings with surrounding villages, the Kingdom \nwas wealthy, crime was very minimal, and most importantly the people were \nhappy.\n " << endl;
 		system("pause");
 		cout << "\nThis peace lasted for centuries... But... like most stories of Heroism,\nthis peace was inevitably disrupted.\n " << endl;
@@ -121,9 +122,9 @@ top:
 		cout << "\nFelix looks at him dumbfounded.\n" << endl;
 		system("pause");
 		Sleep(1000);
-		cout << "\nOld Man Jenkins: You can't keep doing this Felix! Stealing food, in these times, are punishable by death, and yet you go out each and every night, breaking into people's homes, stealing from their pantries, and putting yourself into danger! I can’t take it, Felix, you have such a life to live and you waste it away doing " << endl;
+		cout << "\nOld Man Jenkins: You can't keep doing this Felix! Stealing food, in these \ntimes, are punishable by death, and yet you go out each and every night, \nbreaking into people's homes, stealing from their pantries, and putting \nyourself into danger! I can't take it, Felix, you have such a life to live \nand you waste it away doing " << endl;
 		Sleep(1000);
-		cout << "\nThe last words the old man says seems to eco inside of Felix’s mind for a time. Eventually, after a brief moment of silence replies" << endl;
+		cout << "\nThe last words the old man says seems to eco inside of Felix's mind for \na time. Eventually, after a brief moment of silence replies, while the man \ncontinues to stare at him." << endl;
 		system("pause");
 	}
 	else if (choice == "info")

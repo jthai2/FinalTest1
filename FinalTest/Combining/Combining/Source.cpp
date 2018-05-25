@@ -130,13 +130,17 @@ top:
 	else if (choice == "info")
 	{
 		system("cls");
-		Sleep(1350);
-		cout << "\n	" << arrowRight << "This is a text based story where you'll be traveling along as \n	 a Rogue." << endl;
-		Sleep(3500);
-		cout << "\n	" << arrowRight << "Your objective is to complete multiple stages and tasks which \n	 will lead you to the end." << endl;
-		Sleep(4000);
-		cout << "\n	" << arrowRight << "You may survive and also die, different choices lead you into \n	 choosing if you're going to be a good, bad, or neutral character." << endl;
-		Sleep(5000);
+		Sleep(1000);
+
+		char myStory[] = { "This is a text based story where you'll be traveling along as a Rogue.\n\nYour objective is to complete multiple stages and tasks which will lead \nyou to the end.\n\nYou may survive and also die, different choices lead you into choosing \nif you're going to be a good, bad, or neutral character.\n" };
+
+		for (int x = 0; x < strlen(myStory); x++)
+		{
+			cout << myStory[x];
+			Sleep(50);
+		}
+
+		Sleep(1000);
 
 	startScreenChoice:
 		cout << "\nWould you like to go back to the start screen?" << endl;
@@ -146,11 +150,12 @@ top:
 		cout << "\n	2. [exit]" << endl;
 		Sleep(1000);
 
-		cout << "\nInput Answer: ";
+		cout << "\n\n\n\n\n\nInput Answer: ";
 		cin >> choice;
 
 		if (choice == "yes")
 		{
+			system("cls");
 			goto top;
 		}
 		else if (choice == "no")
